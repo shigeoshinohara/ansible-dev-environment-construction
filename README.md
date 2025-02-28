@@ -492,12 +492,13 @@ PLAY RECAP *********************************************************************
 target1                    : ok=6    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0
 target2                    : ok=6    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0
 ```
-> ブラウザで結果を確認
+> ブラウザで結果を確認   
 
-target1のIPをブラウザで呼び出す。
-![img_46.png](images/img_46.png)
-target1のIPをブラウザで呼び出す。   
-![img_47.png](images/img_47.png)
+target1のIPをブラウザで呼び出す。<br />
+![img_46.png](images/img_46.png)<br />
+
+target2のIPをブラウザで呼び出す。<br />
+![img_47.png](images/img_47.png)<br />
 ---
 ## installしたnginx, firewalldを削除
 > 削除用のPlaybookを作成
