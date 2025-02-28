@@ -1,0 +1,18 @@
+---
+  - hosts: all
+    become: true
+    tasks:
+      - name: stop nginx service
+        service:
+          name: nginx
+          state: stopped
+      - name: stop firewalld service
+        service:
+          name: firewalld
+          state: stopped
+      - name: delete package
+        package:
+          name:
+            - nginx
+            - firewalld
+          state: absent

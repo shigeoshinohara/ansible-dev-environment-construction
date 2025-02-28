@@ -1,0 +1,2 @@
+target1 ansible_host=192.168.10.3 ansible_user=miracle ansible_ssh_private_key_file=/home/miracle/.ssh/miracle
+target2 ansible_host=192.168.10.10 ansible_user=miracle ansible_ssh_private_key_file=/home/miracle/.ssh/miracle

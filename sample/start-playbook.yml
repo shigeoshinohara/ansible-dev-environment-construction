@@ -1,0 +1,31 @@
+---
+  - hosts: all
+    become: true
+    tasks:
+      - name: install package
+        package:
+          name:
+            - nginx
+            - firewalld
+          state: installed
+      - name: start nginx service
+        service:
+          name: nginx
+          state: started
+          enabled: yes
+      - name: start firewalld service
+        service:
+          name: firewalld
+          state: started
+          enabled: yes
+      - name: insert firewalld rule
+        firewalld:
+          port: 80/tcp
+          zone: public
+          state: enabled
+          permanent: yes
+          immediate: yes
+      - name: Copy index.html to remote servers
+        template:
+          src: index.html.j2
+          dest: /usr/share/nginx/html/index.html
