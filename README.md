@@ -499,6 +499,9 @@ target1のIPをブラウザで呼び出す。<br />
 
 target2のIPをブラウザで呼び出す。<br />
 ![img_47.png](images/img_47.png)<br />
+
+### 呼び出しができればAnsibleからnginxとfirewalldの設定が問題なくできたので確認完了
+
 ---
 ## installしたnginx, firewalldを削除
 > 削除用のPlaybookを作成
